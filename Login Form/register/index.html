@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Register Yourself</h1>
+            <div class="input-box">
+                <label for="name"> Full Name :</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email :</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="input-box">
+                <label for="number">Mobile Number :</label>
+                <input type="tel" placeholder="Enter your number" minlength="10" maxlength="10" required>
+            </div>
+
+            <div class="input-box">
+                <label for="city">City :</label>
+                <input type="text" placeholder="Enter your City" required>
+            </div>
+
+            <div class="input-box">
+                <label for="city">State :</label>
+                <input type="text" placeholder="Enter your State" required>
+            </div>
+
+            <br>
+
+            <div class="input-box">
+                <input type="text" placeholder="Create your Username" minlength="8" maxlength="12" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Create your Password" minlength="8" maxlength="8" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <!-- <div class="remember-forgot">
+                <label><input type="checkbox" name="" id="">Remember Me</label>
+                <a href="#">Forgot Password ?</a> 
+            </div> -->
+
+            <button class="btn" type="submit">Submit</button>
+
+            <div class="register-link">
+                <p>Already have an account ? <a href=""> Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

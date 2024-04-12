@@ -1,0 +1,93 @@
+html,
+body{
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+
+}
+
+.pimage1{
+    background-image: url(./image/ramji.jpg);
+    min-height: 100%;
+}
+
+.pimage2{
+    background-image: url(./image/ramji1.jpg);
+    min-height: 100%;
+}
+
+.pimage3{
+    background-image: url(./image/ramji2.jpeg);
+    min-height: 100%;
+}
+
+.pimage1,
+.pimage2,
+.pimage3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    right: 0.010%;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textbg{
+    background-color: #313534;
+    color: white;
+    padding: 20px;
+}
+
+section{
+    padding: 50px 80px;
+    text-align: center;
+
+}
+
+.sectionlight{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+
+/* Define scrollbar track */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Define scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffb81e; /* Color of the scrollbar handle on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Define scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background: #ddd; /* Color of the scrollbar track on hover */
+  }
+  

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+.title_small{
+    font-size: 20px;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.58);
+    border-radius: 10px;
+}
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, 
+select,
+textarea{
+    padding: 6px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: red;
+}
+
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin: 15px;  
+}
+
+button{
+    background-color: chocolate;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: grey;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1/ span 2;
+}
+
+.textarea_control textarea{
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 30px;
+}
+@media (max-width:460px){
+    .textarea_control{
+        grid-column: 1/ span 1;
+    }
+}
+
+
+/* Define scrollbar track */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Define scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffb81e; /* Color of the scrollbar handle on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Define scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background: #ddd; /* Color of the scrollbar track on hover */
+  }
+  

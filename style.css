@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+body {
+  font-size: 1.4rem;
+  overflow-x: hidden;/* disable horizontal scroll */
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--lighting-color);
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem; /*height of navbar*/
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav li {
+  font-size: 2rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#hero {
+  background: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: 4px solid var(--lighting-color);
+  max-height: 100vh; /*height of the hero section */
+}
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  place-items: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hi_text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.name_text {
+  font-size: 5rem;
+}
+
+#hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+/* --------------------------------------About Section--------------------------------------- */
+#about{
+  background-color: #e0aa36;
+}
+.about h1{
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 30px;
+}
+.about_cont{
+  /* border: 2px solid red; */
+  padding: 40px;
+}
+.abt_txt{
+  /* border-bottom: 2px solid; */
+  margin: 20px 40px;
+  padding: 30px;
+}
+.abt_txt h2{
+  padding-bottom: 25px;
+  color: var(--dark-color);
+}
+.abt_txt p{
+  font-size: 1.8rem;
+}
+.abt_txt{
+  cursor:pointer;
+  position:relative;
+  /* padding:10px 20px; */
+  /* background:white; */
+  /* font-size:28px; */
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  transition:all 1s;
+
+  &:after,&:before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    border :0px solid #fff;
+    transition:all 1s;
+    }
+  &:after{
+    top:-1px;
+    left:-1px;
+    border-top:4px solid rgb(0, 0, 0);
+    border-left:4px solid rgb(0, 0, 0);
+  }
+  &:before{
+    bottom:-1px;
+    right:-1px;
+    border-bottom:4px solid black;
+    border-right:4px solid black;
+  }
+  &:hover{
+    border-top-right-radius:0px;
+  border-bottom-left-radius:0px;
+    background:rgba(0, 0, 0, 0.336);
+    color:white;
+    &:before,&:after{
+      width:100%;
+      height:100%;
+      border-color:white;
+    }
+  }
+}
+
+/* --------------------------------------Project Section--------------------------------------- */
+
+#project {
+  background: var(--darker-color);
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  border-bottom: 4px solid var(--lighting-color);
+}
+
+#project h2 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 50px;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2
+  0px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.card:hover .card_content {
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(0px);
+}
+
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+.card_content h3 {
+  text-align: center;
+}
+
+/* ---------------------------Qualification Section---------------------- */
+#quali h1{
+  text-align: center;
+  font-size: 5rem;
+  padding: 30px;
+}
+#quali{
+  /* background: var(--dark-color); */
+  background-color: #e0aa36;
+  padding: 20px; 
+  border-bottom: 4px solid var(--lighting-color);
+}
+
+.qualifi{
+  /* border: 1px solid wheat; */
+  padding: 60px;
+}
+
+.vertical-line {
+  /* border: solid; */
+  position: relative;
+  /* padding-bottom: 20px; */
+  margin-left: 50px;
+  padding-left: 20px; /* Adjust the padding as needed */
+  /* border: 1px solid wheat; */
+}
+.vertical-line::before {
+  content: ' ';
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0;
+  top: 0;
+  left: 3px;
+  width: 5px; /* Width of the line */
+  height: 100%;
+  background: var(--darker-color); /* Color of the line */
+}
+
+.vertical-line::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: -4px; /* Adjust the position of the dot */
+  transform: translateY(-300%);
+  width: 18px; /* Diameter of the dot */
+  height: 18px;
+  border-radius: 50%; /* To make it a circle */
+  background-color: #ff0000; /* Color of the dot */
+}
+/* Optional: Style for the text */
+.content {
+  padding: 20px;
+  margin-left: 20px; /* To create space after the line */
+  margin-right: 500px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.content:hover {
+  transform: scale(1.05);
+  transition: 0.8s ease-in;
+  cursor: pointer;
+  background-color: #ff00004e;
+}
+.content p{
+  font-size: 2rem;
+}
+
+/* -------------------------------------------------END-------------------------------- */
+
+
+/* ----------------------------------------certification------------------------------ */
+#certifi{
+  /* background: var(--dark-color); */
+  background-color: #888;
+  /* background: var(--darker-color); */
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  border-bottom: 4px solid var(--lighting-color);
+}
+#certifi h2 {
+font-size: 5rem;
+color: white;
+text-align: center;
+padding: 2rem 0;
+margin-bottom: 50px;
+}
+.cert_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.cert {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2px;
+}
+.cert:hover {
+  transform: scale(1.3);
+  transition: 1s ease-in-out;
+}
+.cert:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  cursor: zoom-in;
+}
+/* .cert:hover .cert_content {
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(0px);
+} */
+.cert_content{
+  background: #FCF6F5FF;
+  /* background: #8ABAD3FF; */
+  margin-top: 65px;
+  transform: translateY(0px);
+}
+.cert_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  /* transform: translateY(100px); */
+}
+.cert_content h3 {
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.cert_item {
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+}
+.certificate {
+  cursor: pointer;
+  height: auto;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-out;
+}
+
+
+
+/* ---------------------------------------Contact Section------------------------------- */
+#contact {
+  background: var(--dark-color);
+}
+
+#contact h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#contact .container {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact_way i {
+  font-size: 3rem;
+}
+.contact_way h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bottom_contact {
+  padding-top: 20px;
+  max-width: 400px;
+  gap: 8rem;
+  display: grid;
+  margin: 0 auto;
+  margin-right: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+/* .last_contact { */
+  /* max-width: 800px; */
+  /* width: 100%; */
+  /* margin-left: 20px; */
+  /* gap: 2rem; */
+  /* display: flex; */
+  /* margin: 0 auto; */
+  /* margin-right: 500px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(20px, 10fr)); */
+/* } */
+/* 
+.last_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 100px;
+  padding-left: 10px;
+}
+.last_way i {
+  font-size: 2.5rem;
+}
+.last_way h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+} */
+
+.last_contact{
+  display: flex;
+  gap: 4rem;
+  font-size: 3rem;
+  /* margin-left: 180px; */
+  padding-left: 120px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.last_contact i{
+  font-size: 3.4rem;
+}
+.contact_form {
+  /* max-width: 500px; */
+  /* gap: 8rem; */
+  display: grid;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  /* margin-right: 500px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+.contact_form label{
+  margin-right: 5px;
+  font-size: 2rem;
+}
+.contact_form input{
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 5rem;
+}
+.contact_form #email, #name, #number{
+  /* width: 250px;
+  margin-right: 20px; */
+  color: rgb(255, 0, 0);
+}
+.contact_form .submit{
+  background: var(--secondary-color) ;
+}
+.contact_form .submit:hover {
+  cursor: pointer;
+  background-color: #01a704;
+  border: 2px solid rgb(0, 0, 0);
+}
+.contact_form h3{
+  text-align: center;
+  /* padding-left: 500px; */
+  font-size: 3rem;
+  padding-bottom: 40px;
+}
+.contact_form form{
+  border: #333;
+}
+
+/* --------------------------------------------------------Footer----------------------------------------------- */
+
+footer {
+  background: var(--darker-color);
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 786px) {
+  html {
+    font-size: 40%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 50vh;
+  }
+}
+/* .hero_image img{
+  width: 380px;
+  height: 555px;
+  aspect-ratio: 10/10;
+  object-fit: contain;
+} */
+
+
+
+
+
+
+
+/* Define scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Define scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Define scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffb81e; /* Color of the scrollbar handle on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Define scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Define scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Color of the scrollbar track on hover */
+}
+
+

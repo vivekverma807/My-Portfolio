@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    gap: 5px;
+}
+
+.gallery img{
+    margin-top: 50px;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease 0.7s;
+    cursor: pointer;
+    align-content: center;
+}
+
+.gallery img:hover{
+    width: 100%;
+}
+
+.container{
+    background-color: #efb7ba;
+    min-height: 100vh;
+    border: 10px solid #194f92;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image_container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_container, img{
+    width: 300px;
+    height: 330px;
+    filter: drop-shadow(10px 10px 20px rgb(90, 90, 90));
+
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.top_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.top_section h1{
+    font-size: 53px;
+    font-weight: bold;
+    color: #0c0c70;
+}
+
+.top_section h4{
+    text-align: end;
+    font-size: 30px;
+    color: rgb(40, 150, 95);
+}
+
+.about_section{
+    margin-top: 50px;
+
+}
+
+.about_section h2{
+    margin-top: 70px;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about_section p{
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bibliography_section{
+    margin: 50px 0;
+}
+
+.bibliography_section h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.bibliography_section ul{
+    margin-left: 50px;
+}
+
+.bibliography_section li{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer{
+    margin: 50px 0;
+    text-align: end;
+    font-size: 20px;
+}
+
+
+/* Define scrollbar track */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Define scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffb81e; /* Color of the scrollbar handle on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Define scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  /* Define scrollbar track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background: #ddd; /* Color of the scrollbar track on hover */
+  }
+  
