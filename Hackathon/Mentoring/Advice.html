@@ -1,0 +1,176 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        /* .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        } */
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(18, 128, 180); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bxs-comment-detail'></i> Advice </h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Advice</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Training Program !
+
+    </marquee>
+    <section>
+        <div class="feature">
+            <h2>Definition and Purpose of Advice:</h2>
+            <ul>
+                <li>Guiding decisions, solving problems effectively.</li>   
+                <li>Providing direction, support, and insight</li>
+                <li>Facilitating informed choices and positive outcomes.</li>
+             </ul>
+        </div>
+
+        <div class="feature">
+        <h2>Types of Advice:</h2>
+        <p>
+         <ul>
+            <li>Informative, prescriptive, supportive guidance.</li>
+            <li>Offering information, solutions, emotional encouragement.</li>
+            <li>Tailored to address specific needs or challenges.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Qualities of Effective Advice:</h2>
+            <p>
+                <ul>
+                <li>Relevance, clarity, empathy, essential.</li>
+                <li>Pertinent, understandable, empathetic advice.</li>
+                <li>Enhances understanding, trust, and rapport.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Sources of Advice:</h2>
+            <p>
+                <ul>
+                    <li>Professionals, peers, online resources available.</li>
+                    <li>Experts, friends, diverse online platforms.</li>
+                    <li>Websites, forums, social media.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Considerations of Giving Advice:</h2> 
+             <p>
+                <ul>
+                    <li>Context, objectivity, recognizing limitations essential.</li>
+                    <li>Understanding circumstances, impartiality, recipient responsibility.</li>
+                    <li>Considering specific goals and preferences.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Impact of Advice:</h2>
+            <p>
+                <ul>
+                    <li>Empowerment, validation, learning outcomes.</li>
+                    <li>Encouragement, affirmation, personal growth achieved.</li>
+                    <li>Strengthening self-efficacy and autonomy.</li>
+                 </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>

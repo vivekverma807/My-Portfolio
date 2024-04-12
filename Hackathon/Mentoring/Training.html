@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            /* text-align: center; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(81, 106, 232); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bx-chalkboard' ></i> Training </h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Training</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Training Program !
+
+    </marquee>
+    <section>
+        <div class="feature">
+            <h2>Intro:</h2>
+            <p>
+                <ul>
+                    <li>Training imparts knowledge, skills, and abilities.</li>
+                    <li>Enhances performance in specific areas.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+        <h2>Training Needs Identification:</h2>
+        <p>
+         <ul>
+            <li>Assessing skills, knowledge, competencies.</li>
+            <li>Recognizing performance gaps, improvement areas.</li>
+            <li>Aligning training with goals, plans.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Effective Program Design:</h2>
+            <p>
+                <ul>
+                <li>Setting clear learning objectives.</li>
+                <li>Selecting suitable methods, resources.</li>
+                <li> Creating engaging learning experiences.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Training Delivery:</h2>
+            <p>
+                <ul>
+                    <li>Providing diverse instruction mediums.</li>
+                    <li>Ensuring knowledgeable, skilled trainers.</li>
+                    <li>Adapting methods for inclusivity.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Assessment and Evaluation:</h2> 
+             <p>
+                <ul>
+                    <li>Implementing assessments for understanding.</li>
+                    <li>Collecting participant feedback for improvement.</li>
+                    <li>Analyzing effectiveness for organizational impact.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Continuous Improvement:</h2>
+            <p>
+                <ul>
+                    <li>Reviewing outcomes, adjusting programs.</li>
+                    <li>Incorporating new methodologies, technologies.</li>
+                    <li>Promoting ongoing learning, skill development.</li>
+                 </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>

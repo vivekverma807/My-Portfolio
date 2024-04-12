@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            /* text-align: center; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(81, 106, 232); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bxs-directions' ></i> Direction</h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Direction</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Motivation Program !
+
+    </marquee>
+    <section>
+        <div class="feature">
+            <h2>Definition of Direction:</h2>
+            <p><ul>
+                <li>Path, guidance towards desired destination.</li>   
+                <li>Purpose, clarity in life's journey.</li>
+                <li>Focus, orientation towards specific goals..</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+        <h2>Importance of Direction:</h2>
+        <p>
+         <ul>
+            <li>Provides clarity, meaning, and purpose.</li>
+            <li> Guides decision-making, actions, and priorities.</li>
+            <li>Enhances motivation, productivity, and fulfillment.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Establishing Direction:</h2>
+            <p>
+                <ul>
+                <li>Setting clear, achievable goals.</li>
+                <li>Identifying values, passions, and aspirations.</li>
+                <li>Creating actionable plans and strategies.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Maintaining Direction:</h2>
+            <p>
+                <ul>
+                    <li>Consistent review and adjustment of goals.</li>
+                    <li>Staying focused amidst distractions and obstacles.
+                    </li>
+                    <li>Seeking support and accountability when needed.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Finding Direction in Uncertainty:</h2> 
+             <p>
+                <ul>
+                    <li>Exploring interests, strengths, and opportunities.</li>
+                    <li>Embracing challenges as learning experiences.</li>
+                    <li>Trusting intuition and taking calculated risks.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Aligning Direction with Values:</h2>
+            <p>
+                <ul>
+                <li>Ensuring goals reflect personal beliefs.</li>
+                <li>Striving for authenticity and integrity.</li>
+                <li>Cultivating a sense of fulfillment and purpose.</li>
+             </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>

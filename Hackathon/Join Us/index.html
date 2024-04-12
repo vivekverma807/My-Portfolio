@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body oncontextmenu="return false">
+    <div class="container">
+        <div class="apply_box">
+
+            <h1>Submit Your Details</h1> <span class="title_small">(Users)</span>
+            <form method="post">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name" >First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter Your First Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter Your Last Name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="email">Email:- </label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email Id" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="job_role">Qualification:- </label>
+                        <select id="job_role" name="job_role" required>
+                            <option value="" aria-invalid="true" disabled selected>--Select--</option>
+                            <option value="Frontend">10th Standard</option>
+                            <option value="Backend">12th Standard</option>
+                            <option value="Fullstack">Graduate</option>
+                            <option value="UI">Post Graduate</option>
+                            <option value="UX">P.hd</option>
+                        </select>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="address">Address:- </label>
+                        <textarea rows="4" cols="50" name="address" placeholder="Enter Your Full Address" required></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="city">City:- </label>
+                            <select id="city" name="city" required>
+                                <option selected disabled value="Select">--Select--</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                    </div>
+                    <div class="form_control">
+                        <label for="pincode">Pincode:- </label>
+                        <input type="tel" name="pincode" placeholder="Enter Your Pincode" maxlength="6" minlength="6" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="date">Date of Birth:- </label>
+                        <input value="2000-01-01" type="date" name="date" placeholder="Select Your Date" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="upload">Upload Passport Size Photo:- </label>
+                        <input type="file" id="upload" name="upload" accept="image/*" placeholder="Upload Your Image" required>
+                    </div>
+                </div>
+                <div class="button_container">
+                    
+                    <button type="submit" onclick="showAlert()">Submit</button>
+
+                    <!-- <script>
+                        function showAlert() {
+                            alert("Something Went Wrong! it's not working.");
+                        }
+                    </script> -->
+
+                    <script>
+                        function showAlert() {
+                            var newWindow = window.open();
+                            newWindow.alert("Something Went Wrong! It's not working.");
+                        }
+                    </script>
+                </div>
+            </form>
+         </div>
+    </div>        
+</body>
+</html>

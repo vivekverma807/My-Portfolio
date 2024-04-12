@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            /* text-align: center; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(81, 106, 232); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bx-support' ></i> SUPPORT</h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Support</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Support Program !</marquee>
+    <section>
+        <div class="feature">
+            <h2>Definition of Support:</h2>
+            <p><ul>
+                <li>Assistance, aid, or encouragement provided.</li>   
+                <li>Emotional, practical, and tangible help.</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+        <h2>Forms of Support:</h2>
+        <p>
+         <ul>
+            <li>Emotional support: Listening, empathy, understanding.</li>
+            <li>Practical support: Assistance with tasks.</li>
+            <li>Tangible support: Financial or material aid.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Importance of Support:</h2>
+            <p>
+                <ul>
+                <li>Fosters resilience, well-being, and growth.</li>
+                <li>Enhances coping abilities during challenges.</li>
+                <li>Strengthens relationships and sense of belonging.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Sources of Support:</h2>
+            <p>
+                <ul>
+                    <li>Family, friends, and loved ones.</li>
+                    <li>Professional networks and colleagues.</li>
+                    <li>Support groups, communities, and organizations.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Benefits of Support:</h2> 
+             <p>
+                <ul>
+                    <li>Reduces stress, anxiety, and feelings of isolation.</li>
+                    <li>Increases confidence, motivation, and self-esteem.</li>
+                    <li>Facilitates problem-solving and goal achievement.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Providing Support:</h2>
+            <p>
+                <ul>
+                <li>Active listening, empathy, and validation.</li>
+                <li>Offering practical assistance and resources.</li>
+                <li>Being present, reliable, and non-judgmental.</li>
+             </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>  &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>

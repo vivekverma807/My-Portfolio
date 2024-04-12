@@ -1,0 +1,520 @@
+/*---------------------------------- Home Section---------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #16596f;
+  /* --dark-color: #f09a38;
+  --darker-color: #00ff9d;
+  --secondary-color: #bb5e11; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: rgb(255, 255, 255);
+}
+body {
+  font-size: 1.4rem;
+}
+#howw{
+  font-family: Garamond, serif;
+  font-size: 3.2rem;
+  /* font-family: 'Trebuchet MS', sans-serif; */
+  /* font-family: Georgia, serif; */
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* background-color: #16596f; */
+  background-color: #3b00b1fd;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+}
+nav ul {
+  display: flex;
+  gap: 4rem;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem rgb(255, 214, 31) solid;
+  transition: 0.3s ease-in-out;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0;
+  border-bottom: 5px solid var(--lighting-color);
+   max-height: 120vh; /*height of the hero section */
+}
+#hero {
+  background-image: url(./images/ggg.jpg);
+
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  place-items: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hi_text {
+  font-size: 6rem;
+  font-weight: bold;
+  /* color: red; */
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.name_text {
+  font-size: 5rem;
+}
+.hero_content pre{
+  color: rgb(203, 0, 0);
+  margin-left: 50px;
+  margin-top: 50px;
+}
+#pa{
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #ff0000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 78%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff0000;
+  }
+}
+/* ------------------------------End of Home--------------------------------------- */
+
+/*--------------------------- Intro Section------------------------------------- */
+
+#intro {
+  background-image: url(./images/int.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+#intro h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 4rem 0;
+}
+#intro #introh3 {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 4rem 6rem 8rem;
+}
+#intro #int {
+  font-size: 5rem;
+  text-align: center;
+  padding: 5rem;
+}
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 8rem;
+  margin-bottom: 60px;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.08);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+/* .card:hover .card_content {
+  background: #ffffff;
+  color: var(--dark-color);
+  transform: translateY(2px);
+} */
+.card_content{
+  /* background: #FCF6F5FF; */
+  background: #8ABAD3FF;
+  transform: translateY(0px);
+}
+
+.card_content h2{
+  color: rgba(210, 0, 109, 0.902);
+  margin-top: 5px;
+}
+.card_content h3{
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+
+/* .card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+} */
+.card_content h3 {
+  text-align: justify;
+  font-size: 2rem;
+}
+.card_content h2 {
+  text-align: center;
+}
+
+#intro{
+  border-bottom: 5px solid var(--lighting-color);
+  /* height: 100%; */
+}
+/* ------------------------------End of Intro--------------------------------------- */
+
+/* -----------------------------Contact Section--------------------------------------*/
+#contact {
+  /* background: var(--dark-color); */
+  border-bottom: 5px solid var(--lighting-color);
+  background-image: url(./images/hr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#contact .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  margin-right: 100vh;
+}
+
+#contact #enquire{
+  /* height: 90vh; */
+  /* flex-direction: column; */
+  /* gap: 2rem; */
+  justify-content: flex-end;
+  /* margin-left: 100vh; */
+  /* display: flex; */
+  gap: 1rem;
+  /* align-items: right; */
+}
+
+.top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact_way i {
+  font-size: 3rem;
+}
+.contact_way h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bottom_contact {
+  max-width: 600px;
+  gap: 1rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* --------------------------------About Section ----------------------------*/
+/* #about {
+  background: var(--dark-color);
+  border-bottom: 5px solid var(--lighting-color);
+} */
+
+/* #about h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#about .container {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+} */
+
+/* .top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact_way i {
+  font-size: 3rem;
+}
+.contact_way h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bottom_contact {
+  max-width: 400px;
+  gap: 1rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+} */
+
+/* -----------------------------------Footer---------------------------------- */
+
+footer {
+  background: var(--lighting-color);
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/*------------------------------------- Media Query-------------------------------- */
+
+@media (max-width: 786px) {
+  html {
+    font-size: 40%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+  #hero .container {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: grid;
+    place-items: center;
+  }
+  #contact .container {
+    height: 50vh;
+  }
+}
+
+
+/* --------------------------------------Scroll bar Effect-------------------------------------------- */
+
+/* Define scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Define scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar handle */
+  border-radius: 555px; /* Rounded corners */
+}
+
+/* Define scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff0000; /* Color of the scrollbar handle on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Define scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Define scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Color of the scrollbar track on hover */
+}
+/* -------------------------------------------End------------------------------------------- */
+
+/* --------------------------------------Parallax Effect-------------------------------------------- */
+.pimg1 {
+  background-image: url(./images/mentor.jpg);
+  min-height: 100vh;
+  height: 10vh; 
+}
+.pimg1{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.textBg {
+  background: #313534;
+  color: #fff;
+  padding: 20px;
+}
+#para{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.section-light {
+  background-color: var(--lighting-color);
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-light h2{
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #B3C7D6FF;
+}
+
+.section-light p{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: justify;
+  color: #B3C7D6FF;
+}
+
+/* ----------------------------------------------dropdowm effect---------------------------------- */
+#drop ul {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0s; /* Add transition property */
+  transition-delay: 0.3s; /* Add transition delay */
+}
+
+#drop:hover ul {
+  display: block; /* Show the dropdown immediately on hover */
+  transition-delay: 10s; /* Remove delay when showing the dropdown */
+}
+#drop ul:hover{
+  transition: 0.3s ease-in-out; /* Add transition property */
+  transition-delay: 1s; 
+}
+
+#drop ul li {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #16596f;
+  display: block;
+}
+
+#drop ul li:hover {
+  background-color: #36cbd8;
+}

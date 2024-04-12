@@ -1,0 +1,175 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            /* text-align: center; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(81, 106, 232); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bx-line-chart'></i> Success</h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Success</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Success Program !</marquee>
+    <section>
+        <div class="feature">
+            <h2>Definition of Success:</h2>
+            <p><ul>
+                <li>Achieving goals, fulfilling aspirations.</li>   
+                <li>Personal fulfillment, meaningful accomplishments attained.</li>
+                <li>Feeling content, satisfied with achievements.</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+        <h2>Factors Contributing to Success:</h2>
+        <p>
+         <ul>
+            <li>Hard work, perseverance, dedication essential.</li>
+            <li>Talent, skills, abilities honed over time.</li>
+            <li>Positive mindset, resilience, overcoming challenges.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Types of Success:</h2>
+            <p>
+                <ul>
+                <li>Personal, professional, and academic achievements.</li>
+                <li>Financial success, career advancement, and entrepreneurship.</li>
+                <li>Success in relationships, health, and happiness.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Factors Influencing Success:</h2>
+            <p>
+                <ul>
+                    <li>Supportive environment, mentors, and networking.</li>
+                    <li>Positive mindset, determination, and goal-setting.</li>
+                    <li>Opportunities, luck, and seizing the moment.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Characteristics of Successful Individuals:</h2> 
+             <p>
+                <ul>
+                    <li>Resilience, perseverance, and adaptability.</li>
+                    <li>Self-discipline, focus, and time management.</li>
+                    <li>Continuous learning, growth mindset, and innovation.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Measuring Success:</h2>
+            <p>
+                <ul>
+                <li>Accomplishments, milestones reached, benchmarks met.</li>
+                <li>Impact on others, contributions recognized, influence.</li>
+                <li>Fulfillment of personal, professional aspirations.</li>
+             </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>  &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>

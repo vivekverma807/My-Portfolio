@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>BCA Web Page</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .feature {
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            /* text-align: center; */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .feature h2{
+            text-align: center;
+        }
+
+        .feature li{
+            font-size: 1.08rem;
+        }
+
+        .feature:hover {
+            transform: scale(1.2);
+        }
+
+        .aalag{
+            width: 30%;
+            padding: 1.5rem;
+            margin: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aalag:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .marquee{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .blink { 
+            animation: blinker 1.5s linear infinite; 
+            color: rgb(81, 106, 232); 
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        dd{
+            background: linear-gradient(90deg, rgb(54, 255, 51), red);
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <dl>
+            <dt style="font-size: 20px;"><h1><i class='bx bx-podcast' ></i> Goals</h1></dt>
+            <dd style="font-size: 30px;"><h3>Introduction To Goals</h3></dd>
+        </dl>
+    </header>
+
+    <br><marquee behavior="scroll" direction="left" scrollamount="20" class="blink">Welcome To Goals Program !
+
+    </marquee>
+    <section>
+        <div class="feature">
+            <h2>Definition of Goals:</h2>
+            <p><ul>
+                <li>Desired outcomes, targets to achieve.</li>   
+                <li>Specific, measurable, and achievable objectives.</li>
+            </ul>
+        </div>
+
+        <div class="feature">
+        <h2>Characteristics of Effective Goals:</h2>
+        <p>
+         <ul>
+            <li>Clear, specific, and well-defined targets.</li>
+            <li>Measurable progress and success indicators.</li>
+            <li>Realistic and attainable within set timeframe.</li>
+         </ul>
+        </p>
+        </div>
+
+        <div class="feature">
+            <h2>Importance of Setting Goals:</h2>
+            <p>
+                <ul>
+                <li>Provides direction, focus, and motivation.</li>
+                <li>Guides decision-making and prioritization.</li>
+                <li> Enhances productivity and accomplishment.</li>
+             </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Types of Goals:</h2>
+            <p>
+                <ul>
+                    <li>Short-term: Achievable within days or weeks.</li>
+                    <li>Medium-term: Attainable within months or years.
+                    </li>
+                    <li>Long-term: Targeted over extended periods.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Benefits of Goal Setting:</h2> 
+             <p>
+                <ul>
+                    <li>Clarifies priorities and intentions.</li>
+                    <li>Boosts self-confidence and self-efficacy.</li>
+                    <li>Encourages growth, learning, and development.</li>
+                 </ul>
+            </p>
+        </div>
+
+        <div class="feature">
+            <h2>Process of Goal Achievement:</h2>
+            <p>
+                <ul>
+                <li>Planning: Setting objectives and action steps.</li>
+                <li>Implementation: Taking consistent, focused action.</li>
+                <li>Evaluation: Monitoring progress and adjusting as needed.</li>
+             </ul>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; 2024 All Rights Reserved by Mentorship & Training</p>
+    </footer>
+</body>
+</html>
