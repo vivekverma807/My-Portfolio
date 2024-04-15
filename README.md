@@ -21,6 +21,4 @@ This repository contains the code for my personal portfolio website. The website
 - CSS3 (including CSS pre-processors like SASS/SCSS)
 - JavaScript (ES6+)
 - Frontend Framework (e.g., React, Vue.js)
-- Backend Framework (e.g., Node.js, Django, Flask)
-- Database (if applicable)
 - Hosting Service (e.g., GitHub Pages, Netlify, Heroku)
