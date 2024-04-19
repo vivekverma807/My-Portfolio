@@ -271,7 +271,7 @@ nav li:hover {
 #quali{
   /* background: var(--dark-color); */
   background-color: #e0aa36;
-  padding: 20px; 
+  padding: 20px 10px; 
   border-bottom: 4px solid var(--lighting-color);
 }
 
@@ -313,9 +313,9 @@ nav li:hover {
 }
 /* Optional: Style for the text */
 .content {
-  padding: 20px;
+  padding: 20px 10px 20px 20px;
   margin-left: 20px; /* To create space after the line */
-  margin-right: 500px;
+  margin-right: 50px;
   border: 2px solid rgb(255, 255, 255);
   margin-top: 20px;
 }
@@ -451,9 +451,11 @@ margin-bottom: 50px;
 
 .bottom_contact {
   padding-top: 20px;
-  max-width: 400px;
-  gap: 8rem;
-  display: grid;
+  /* margin-left: 20px; */
+  padding-left: 80px;
+  max-width: 500px;
+  gap: 2.5rem;
+  display: flex;
   margin: 0 auto;
   margin-right: 500px;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -485,63 +487,97 @@ margin-bottom: 50px;
   font-size: 2.5rem;
   font-weight: bold;
 } */
+/* Styles for screens smaller than 600px */
 
-.last_contact{
+.last_contact {
   display: flex;
-  gap: 4rem;
-  font-size: 3rem;
-  /* margin-left: 180px; */
-  padding-left: 120px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: center; /* Center items horizontally */
+  gap: 1rem; /* Adjust spacing between items */
+  padding: 1rem; /* Add padding to the container */
+}
+
+.last_contact .last_way {
+  flex: 1 1 40px; /* Make each contact link equally sized with a maximum width of 200px */
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
 }
-.last_contact i{
-  font-size: 3.4rem;
+
+.last_contact i {
+  font-size: 3rem; /* Decrease icon size for smaller screens */
 }
+
+.last_contact h5 {
+  font-size: 2.5rem; /* Adjust heading size for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .last_contact {
+    flex-direction: row; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  .last_contact .last_way {
+    flex: 1 1 auto; /* Allow items to grow to fill the container */
+    max-width: 90%; /* Set maximum width to full width */
+  }
+}
+
 .contact_form {
-  /* max-width: 500px; */
-  /* gap: 8rem; */
-  display: grid;
+  display: flex;
+  flex-direction: column; /* Default to column layout */
+  gap: 8rem; /* Adjust spacing between elements */
   margin: 0 auto;
-  padding-left: 150px;
-  padding-right: 150px;
-  /* margin-right: 500px; */
-  /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
-  padding-bottom: 40px;
-  padding-top: 10px;
+  padding: 1rem; /* Add padding to the container */
+  max-width: 300px; /* Limit width for smaller screens */
 }
-.contact_form label{
-  margin-right: 5px;
-  font-size: 2rem;
+
+.contact_form label {
+  padding-top: 20px;
+  font-size: 2rem; /* Decrease label font size for smaller screens */
 }
-.contact_form input{
-  padding: 8px;
+
+.contact_form input {
+  width: 100%; /* Make inputs fill the available width */
+  padding: 1rem; /* Adjust input padding */
+  margin-top: 10px;
   border-radius: 5px;
-  margin-right: 5rem;
 }
-.contact_form #email, #name, #number{
-  /* width: 250px;
-  margin-right: 20px; */
-  color: rgb(255, 0, 0);
+
+.contact_form .submit {
+  width: 100%; /* Make submit button fill the available width */
+  padding: 0.5rem;
+  background: var(--secondary-color);
 }
-.contact_form .submit{
-  background: var(--secondary-color) ;
-}
+
 .contact_form .submit:hover {
   cursor: pointer;
   background-color: #01a704;
-  border: 2px solid rgb(0, 0, 0);
 }
-.contact_form h3{
+
+.contact_form h3 {
+  font-size: 3rem; /* Decrease heading font size for smaller screens */
   text-align: center;
-  /* padding-left: 500px; */
-  font-size: 3rem;
-  padding-bottom: 40px;
+  margin-bottom: 1rem; /* Adjust margin for better spacing */
 }
-.contact_form form{
-  border: #333;
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .contact_form {
+    flex-direction: row; /* Change to row layout for larger screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .contact_form label {
+    padding-top: 0; /* Remove top padding for labels */
+    padding-right: 20px; /* Add right padding for labels */
+  }
+
+  .contact_form input {
+    margin-top: 0; /* Remove top margin for inputs */
+  }
 }
+
 
 /* --------------------------------------------------------Footer----------------------------------------------- */
 
