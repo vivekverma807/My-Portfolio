@@ -42,6 +42,25 @@
         </ul>
       </nav>
     </header>
+    <script>
+
+let lastScrollTop = 0;
+let header = document.querySelector("header");
+let logo = document.querySelector(".logo");
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop && currentScroll > 0) {
+    // Scroll down
+    logo.classList.add("hide");
+  } else {
+    // Scroll up
+    logo.classList.remove("hide");
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+}, false);
+    </script>
+
     <main>
       <section id="hero">
         <div class="container">
@@ -53,7 +72,7 @@
               <span class="hi_text">Hi</span> , I am
               <span class="name_text">Vivek Kumar Verma</span>
             </h1>
-            <h2>Frontend Developer</h2>
+            <h2>Full Stack Developer</h2>
           </div>
         </div>
       </section>
