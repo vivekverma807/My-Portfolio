@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;/* disable horizontal scroll */
 }
 
-.container {
+/* .container {
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -43,6 +43,35 @@ header {
   top: 0;
   z-index: 100;
   background: var(--lighting-color);
+}
+header .logo{
+  position: relative;
+} */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--lighting-color);
+  transition: top 0.3s; /* Add smooth transition */
+}
+header .logo {
+  position: relative;
+  transition: opacity 0.3s; /* Add smooth transition for opacity */
+}
+.hide {
+  opacity: 0;
 }
 
 section {
@@ -61,7 +90,7 @@ nav ul {
   gap: 1.2rem;
 }
 nav li {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   border-bottom: 0.4rem transparent solid;
   transition: 0.3s ease-in-out;
 }
@@ -120,7 +149,7 @@ nav li:hover {
     width: 0;
   }
   to {
-    width: 60%;
+    width: 64%; /* Adjust as needed for typing effect for text*/
   }
 }
 @keyframes blink-caret {
@@ -380,8 +409,8 @@ margin-bottom: 50px;
 .cert_content{
   background: #FCF6F5FF;
   /* background: #8ABAD3FF; */
-  margin-top: 65px;
-  transform: translateY(0px);
+  margin-top: 64px;
+  /* transform: translateY(0px); */
 }
 .cert_content {
   padding: 2rem;
@@ -389,7 +418,7 @@ margin-bottom: 50px;
   top: -6.5rem;
   margin-bottom: -6.5rem;
   transition: 0.5s ease-in-out;
-  /* transform: translateY(100px); */
+  /* transform: translateY(5px); */
 }
 .cert_content h3 {
   text-align: center;
@@ -407,6 +436,7 @@ margin-bottom: 50px;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-out;
 }
+
 
 
 
@@ -559,11 +589,10 @@ margin-bottom: 50px;
   background-color: #01a704;
 }
 
-
 .contact_form h3 {
   font-size: 3rem; /* Decrease heading font size for smaller screens */
   text-align: center;
-  margin-bottom: 1rem; /* Adjust margin for better spacing */
+  margin-bottom: 5rem; /* Adjust margin for better spacing */
 }
 
 /* Media query for larger screens */
