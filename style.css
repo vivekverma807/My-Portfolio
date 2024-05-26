@@ -389,16 +389,16 @@ margin-bottom: 50px;
   flex-direction: column;
   border-radius: 0.5rem;
   overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   margin-bottom: 2px;
 }
 .cert:hover {
   transform: scale(1.15);
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .cert:hover img {
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   opacity: 0.8;
   cursor: zoom-in;
 }
@@ -437,7 +437,24 @@ margin-bottom: 50px;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-out;
 }
-
+.cert-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.cert-button:hover {
+  background-color: #00ab00;
+  transform: scale(1.15);
+  transition: 0.3s ease-in-out;
+}
 
 
 
@@ -695,5 +712,3 @@ footer {
 ::-webkit-scrollbar-track:hover {
   background: #ddd; /* Color of the scrollbar track on hover */
 }
-
-
