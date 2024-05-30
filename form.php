@@ -16,9 +16,9 @@ if (!$conn) {
     $sql = "INSERT INTO form VALUES ('$n_nam','$n_ema','$n_num')";
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        echo "<br>Data Inserted";
+        echo "<br>Message Sent";
     } else {
-        echo "<br>Data Not Inserted";
+        echo "<br>Error in Sending Message !";
     }
 }
 ?>
