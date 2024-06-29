@@ -478,7 +478,7 @@ window.addEventListener("scroll", function () {
 
             <div class="cert_item">
               <div class="cert">
-                <img class="certificate" src="./certificates/Devtown (3).jpg" alt="Certificate 18" />
+                <img class="certificate" src="./certificates/Devtown 3.jpg" alt="Certificate 18" />
                 <div class="cert_content">
                   <h3>Certificate from DevTown</h3>
                 </div>
@@ -488,7 +488,7 @@ window.addEventListener("scroll", function () {
 
             <div class="cert_item">
               <div class="cert">
-                <img class="certificate" src="./certificates/Devtown (1).jpg" alt="Certificate 18" />
+                <img class="certificate" src="./certificates/Devtown 1.jpg" alt="Certificate 18" />
                 <div class="cert_content">
                   <h3>Certificate from GDSC for Python in AI</h3>
                 </div>
@@ -498,7 +498,7 @@ window.addEventListener("scroll", function () {
 
             <div class="cert_item">
               <div class="cert">
-                <img class="certificate" src="./certificates/Devtown (2).jpg" alt="Certificate 18" />
+                <img class="certificate" src="./certificates/Devtown 2.jpg" alt="Certificate 18" />
                 <div class="cert_content">
                   <h3>Certificate from AWS of Python in AI</h3>
                 </div>
@@ -526,11 +526,60 @@ window.addEventListener("scroll", function () {
               <a href="https://www.cert.devtown.in/verify/26h53N" target="_blank" class="cert-button">Verify</a>
             </div>
 
+            <div class="cert_item">
+              <div class="cert">
+                <img class="certificate" src="./certificates/Devtown 6.jpg" alt="Certificate 19" />
+                <div class="cert_content">
+                  <h3>Certificate from DevTown for C++ & DSA</h3>
+                </div>
+              </div>
+            <a href="https://cert.devtown.in/verify/ZLTyPu" target="_blank" class="cert-button">Verify</a>
+            </div>
+
+            <div class="cert_item">
+              <div class="cert">
+                <img class="certificate" src="./certificates/Devtown 7.jpg" alt="Certificate 20" />
+                <div class="cert_content">
+                  <h3>Certificate from GDSC for C++ & DSA</h3>
+                </div>
+              </div>
+            <a href="https://www.cert.devtown.in/verify/Z1Oj96i" target="_blank" class="cert-button">Verify</a>
+            </div>
+
+            <div class="cert_item">
+              <div class="cert">
+                <img class="certificate" src="./certificates/Devtown 8.jpg" alt="Certificate 21" />
+                <div class="cert_content">
+                  <h3>Certificate from DevTown of Instagram Clone</h3>
+                </div>
+              </div>
+            <a href="https://www.cert.devtown.in/verify/NDUSW" target="_blank" class="cert-button">Verify</a>
+            </div>
+
+            <div class="cert_item">
+              <div class="cert">
+                <img class="certificate" src="./certificates/Devtown 9.jpg" alt="Certificate 22" />
+                <div class="cert_content">
+                  <h3>Certificate from GDSC of Instagram Clone</h3>
+                </div>
+              </div>
+            <a href="https://www.cert.devtown.in/verify/1yILiU" target="_blank" class="cert-button">Verify</a>
+            </div>
+
             <!-- <div class="cert_item">
               <div class="cert">
                 <img class="certificate" src="" alt="Certificate 18" />
                 <div class="cert_content">
-                  <h3>Hackathon Project</h3>
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert_item">
+              <div class="cert">
+                <img class="certificate" src="" alt="Certificate 18" />
+                <div class="cert_content">
+                  <h3></h3>
                 </div>
               </div>
             </div> -->
@@ -540,7 +589,7 @@ window.addEventListener("scroll", function () {
               <div class="cert">
                 <img class="certificate" src="" alt="Certificate 18" />
                 <div class="cert_content">
-                  <h3>Hackathon Project</h3>
+                  <h3></h3>
                 </div>
               </div>
             </div> -->
@@ -694,21 +743,29 @@ window.addEventListener("scroll", function () {
 
         </div>
 
-          <div class="contact_form">
-            <form method="post">
-              <h3>Any Query ?</h3>
-              <label for="name">Name :</label><br>
+        <div class="contact_form">
+          <form method="post" onsubmit="return handleSubmit()">
+              <h3>Any Query?</h3>
+              <label for="name">Name:</label><br>
               <input type="text" name="name" id="nam" placeholder="Enter Your Name" required><br><br>
-
-              <label for="email">Email :</label>
+      
+              <label for="email">Email:</label>
               <input type="email" name="email" id="ema" placeholder="Enter Your Email" required><br><br>
-
-              <label for="number">Number :</label>
-              <input type="tel" name="num" id="num" placeholder="Enter Your Number" required>
-              
+      
+              <label for="number">Number:</label>
+              <input type="tel" name="num" id="num" placeholder="Enter Your Number" required><br><br>
+      
               <input type="submit" value="Send➡️" class="submit">
-            </form>
-          </div>
+      
+              <script>
+                  function handleSubmit() {
+                      alert("Message Sent Successfully");
+                      return false; // Prevent the default form submission
+                  }
+              </script>
+          </form>
+      </div>
+      
       </section>
     </main>
 
