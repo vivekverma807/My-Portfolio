@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/7a4b62b0a4.js"
       crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/401d0af308.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body oncontextmenu="return false" onselectstart="return false">
     <header>
@@ -744,27 +745,32 @@ window.addEventListener("scroll", function () {
         </div>
 
         <div class="contact_form">
-          <form method="post" onsubmit="return handleSubmit()">
+          <form method="post" onsubmit="handleSubmit(event)">
               <h3>Any Query?</h3>
               <label for="name">Name:</label><br>
-              <input type="text" name="name" id="nam" placeholder="Enter Your Name" required><br><br>
+              <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
       
               <label for="email">Email:</label>
-              <input type="email" name="email" id="ema" placeholder="Enter Your Email" required><br><br>
+              <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br><br>
       
               <label for="number">Number:</label>
-              <input type="tel" name="num" id="num" placeholder="Enter Your Number" required><br><br>
+              <input type="tel" name="number" id="number" placeholder="Enter Your Number" required><br><br>
       
               <input type="submit" value="Send➡️" class="submit">
-      
-              <script>
-                  function handleSubmit() {
-                      alert("Message Sent Successfully");
-                      return false; // Prevent the default form submission
-                  }
-              </script>
           </form>
       </div>
+      
+      <script>
+          function handleSubmit(event){
+              event.preventDefault();
+              Swal.fire({
+                  title: "Good job!",
+                  text: "You have Submited",
+                  icon: "success"
+              });
+          }
+      </script>
+      
       
       </section>
     </main>
